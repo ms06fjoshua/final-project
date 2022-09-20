@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+	font-family:微軟正黑體;
+}
+.top{
+	background-color: #f6f6f6;
+}
+.top ul{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	padding: 5px 10px;
+}
+.top ul li a{
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	padding: 2px 10px;
+}
+.facebook{
+	border-right: 1px solid RGB(206,207,209);
+}
+.facebook a{
+	color: RGB(93,118,175);
+}
+.twitter a{
+	color: RGB(0,173,241);
+}
+.facebook a:hover, 
+.twitter a:hover{
+	color:RGB(0,207,156);
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	background-color: #RGB(255,255,255);
+}
+.header h1 a{
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+	width: 224px;
+	height: 50px;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 8px 0;
+}
+.header ul{
+	display: flex;
+	align-items: center;
+}
+.header ul li a{
+	text-decoration: none;
+	color: RGB(0,207,156);
+	display: block;
+	padding: 24px 20px;
+	border-bottom: 5px solid transparent;
+	font-weight: bold;
+}
+.header ul li a:hover{
+	border-bottom: 5px solid RGB(0,207,156);
+	transition: all 0.8s;
+}
+
+.banner{
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+	background-size: auto;
+	height: 346px;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	position: relative;
+}
+.banner h2{
+	font-size: 34px;
+	line-height: 1.5;
+	font-weight: bold;
+	box-sizing: border-box;
+	width: 100%;
+	color: white;
+	padding: 30px 0 30px 20px;
+	background-color: RGBA(29,29,29,0.3);
+	position: absolute;
+	top: 26%;
+}
+
+.couese{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+.couese li{
+	width: 300px;
+	box-shadow: 0 5px 3px RGB(216,217,219);
+	padding: 0 20px 10px 20px;
+	box-sizing: border-box;
+}
+.couese li:hover{
+	box-shadow: 0 10px 10px RGB(216,217,219);
+	transition: all 0.3s;
+}
+.couese_jquery li{
+	box-shadow: 0 0 0 white;
+	list-style: disc;
+	list-style-position: inside;
+	padding-left: 5px;
+}
+.couese img{
+	width: 100%;
+}
+.couese li h3{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.couese li p, couese li ul li{
+	line-height: 1.5;
+}
+
+.compair{
+	margin-bottom: 50px;
+}
+.compair h2{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+.compair table{
+	width: 840px;
+	margin: 0 80px;
+}
+.compair th, .compair td{
+	border-top: 1px solid RGB(223,224,226);
+  border-bottom: 1px solid RGB(223,224,226);
+  font-weight: bold;
+}
+.compair th{
+	padding: 10px 0 10px 20px;
+	background-color: RGB(249,251,253);
+	text-align: left;
+
+	font-weight: bold;
+}
+.compair td{
+	padding: 10px 0 10px 20px;
+}
+.style1{
+	color: RGB(34,181,145);
+}
+.compair table tr:hover{
+	background-color: RGB(249,251,253);
+}
+
+.imformation{
+	background: linear-gradient(RGB(0,101,76),RGB(0,154,116));
+	position: relative;
+}
+.imformation h2{
+	font-size: 25px;
+	color: #f6f6f6;
+	text-align: center;
+	line-height: 1.5;
+	padding: 30px 0;
+	font-weight: bold;
+}
+.imformation form{
+	display: flex;
+}
+.imformation form textarea{
+	height: 245px;
+	width: 460px;
+	resize: none;
+	border-radius: 3px;
+	margin: 0 20px 30px 20px;
+	padding: 5px;
+}
+.personal_imfo{
+	margin: 0 20px 30px 20px;
+}
+.personal_imfo label, .personal_imfo input{
+	display: block;
+}
+.personal_imfo label{
+	color: #f6f6f6;
+	font-weight: bold;
+	margin: 6px;
+}
+.personal_imfo input{
+	width: 460px;
+	padding: 8px 5px;
+	border-radius: 3px;
+	border: transparent;
+}
+.imformation form .comfirm{
+	color: #f6f6f6;
+	background-color: RGB(0,207,156);
+	border: transparent;
+	height: 32px;
+	padding: 0 20px;
+	border-radius: 3px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+	cursor: pointer;
+}
+.imformation form .comfirm:hover{
+	color: RGB(0,154,116);
+	background-color: #fff;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+}
+.footer a{
+	padding: 20px 10px;
+}
+.footer ul{
+	margin-top: 20px;
+}
+.footer ul li{
+	line-height: 1.5;
+}
+.footer ul li a{
+	text-decoration: none;
+	color: RGB(231,74,148);
+}
